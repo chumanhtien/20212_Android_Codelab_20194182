@@ -71,6 +71,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onRestoreInstanceState(@NonNull Bundle savedInstanceState) {
         super.onRestoreInstanceState(savedInstanceState);
+        Log.d(LOG_TAG,"onRestoreInstanceState");
         if (savedInstanceState != null) {
             boolean isVisible = savedInstanceState.getBoolean("reply_visible");
             if (isVisible) {
