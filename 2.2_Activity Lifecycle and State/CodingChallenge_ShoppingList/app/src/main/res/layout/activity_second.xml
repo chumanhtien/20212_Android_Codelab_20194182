@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity">
+    <TextView
+        android:id="@+id/shop_items_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#4CAF50"
+        android:text="Choose Items"
+        android:textColor="#FFFFFF"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shop_items_heading"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/list_items"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:text="Please choose the items to add to your cart"
+                android:textStyle="bold"
+                />
+            <CheckBox
+                android:id="@+id/shop_item_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:textSize="20sp"
+                android:text="Cheese">
+            </CheckBox>
+
+            <CheckBox
+                android:id="@+id/shop_item_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:textSize="20sp"
+                android:text="Apples">
+            </CheckBox>
+
+            <CheckBox
+                android:id="@+id/shop_item_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:textSize="20sp"
+                android:text="Rice">
+            </CheckBox>
+
+            <CheckBox
+                android:id="@+id/shop_item_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:textSize="20sp"
+                android:text="Plumping">
+            </CheckBox>
+
+            <CheckBox
+                android:id="@+id/shop_item_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:textSize="20sp"
+                android:text="Grapes">
+            </CheckBox>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:id="@+id/add_to_cart"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Add to Cart"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
